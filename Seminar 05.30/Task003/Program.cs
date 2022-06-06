@@ -10,7 +10,7 @@ var rnd = new Random();
 for (int i=0; i<size; i++)
 {
     for (int j=0; j<size; j++)
-        matrix[i,j] = rnd.Next(0,6);
+        matrix[i,j] = rnd.Next(0,100);
     summa += matrix[i,size-i-1];
 }
 
@@ -18,7 +18,7 @@ Console.WriteLine($"Квадратная матрица {size}х{size}");
 for (int i=0; i<size; i++)
 {
     for (int j=0; j<size; j++)
-        Console.Write($"{matrix[i,j]} ");
+        Console.Write($"{matrix[i,j]}\t");
     Console.WriteLine();
 }
 Console.WriteLine($"Сумма побочной диагонали матрицы равна {summa}");

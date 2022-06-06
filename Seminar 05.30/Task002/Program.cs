@@ -21,10 +21,10 @@ for (int i=0; i<sizeCol; i++)
 
 Console.WriteLine();
 
-for (int i=0; i<sizeCol; i++)
+for (int i=0; i<sizeRow; i++)
 {
     Summa=0;
-    for (int j=0; j<sizeRow; j++)
+    for (int j=0; j<sizeCol; j++)
         Summa += matrix[j,i];
     Console.WriteLine($"Среднее арифметическое {i+1} столбца: {Math.Round(Summa/sizeCol, 2)} ");
 }
